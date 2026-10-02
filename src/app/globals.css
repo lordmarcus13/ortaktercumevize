@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-blue: #0b1120; /* Ultra deep navy */
+  --color-brand-blue-light: #151e32; /* Slightly lighter navy for cards */
+  --color-brand-accent: #38bdf8; /* Light sky blue */
+  --color-brand-accent-hover: #0284c7; /* Sky blue */
+  --color-brand-slate: #64748b; /* Slate for muted elements */
+  --color-brand-text: #ffffff; /* Crisp white */
+  --color-brand-muted: #94a3b8; /* Muted text */
+  --font-sans: "Inter", system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-brand-blue);
+    color: var(--color-brand-text);
+    font-family: var(--font-sans);
+  }
+  
+  ::selection {
+    background-color: rgba(56, 189, 248, 0.3);
+    color: var(--color-brand-text);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
