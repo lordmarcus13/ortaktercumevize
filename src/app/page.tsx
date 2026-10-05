@@ -11,7 +11,8 @@ import {
   Info,
   ArrowRight,
   FileSignature,
-  Globe
+  Globe,
+  Phone
 } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
@@ -360,6 +361,24 @@ export default function Home() {
                     </div>
                   </div>
                   <ChevronRight className="w-4 h-4 sm:w-5 sm:h-5 text-zinc-500 group-hover:text-emerald-400 transition-transform group-hover:translate-x-1" />
+                </Link>
+
+                <Link
+                  href="tel:+905426961732"
+                  className="flex items-center justify-between p-4 sm:p-5 bg-white/[0.02] backdrop-blur-xl border border-white/10 rounded-2xl hover:border-indigo-500/40 hover:bg-indigo-500/5 hover:shadow-[0_5px_20px_rgba(79,70,229,0.1)] transition-all duration-300 group active:scale-[0.98]"
+                  aria-label="Telefonla Arayın"
+                >
+                  <div className="flex items-center">
+                    <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl bg-indigo-500/10 flex items-center justify-center text-indigo-400 mr-4 sm:mr-5 relative shrink-0 border border-indigo-500/20">
+                      <Phone className="w-5 h-5 sm:w-6 sm:h-6" />
+                      <div className="absolute inset-0 rounded-xl sm:rounded-2xl animate-ping bg-indigo-500/20" />
+                    </div>
+                    <div>
+                      <span className="block font-bold text-sm sm:text-base text-zinc-200 group-hover:text-indigo-400 transition-colors tracking-wide">Doğrudan Arayın</span>
+                      <span className="text-xs sm:text-sm text-zinc-400 font-light">+90 542 696 17 32</span>
+                    </div>
+                  </div>
+                  <ChevronRight className="w-4 h-4 sm:w-5 sm:h-5 text-zinc-500 group-hover:text-indigo-400 transition-transform group-hover:translate-x-1" />
                 </Link>
 
               </motion.div>

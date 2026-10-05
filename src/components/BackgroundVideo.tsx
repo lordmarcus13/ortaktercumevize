@@ -6,6 +6,8 @@ export default function BackgroundVideo() {
         loop
         muted
         playsInline
+        preload="auto"
+        poster="/logo.png"
         className="w-full h-full object-cover opacity-80"
       >
         <source src="/background.mp4" type="video/mp4" />

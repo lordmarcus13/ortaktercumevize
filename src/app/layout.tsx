@@ -9,9 +9,29 @@ import Footer from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://ortaktercumevize.vercel.app'),
   title: "Ortak Tercüme ve Vize Danışmanlık | Yeminli Tercüme & Noter Onaylı Çeviri",
   description: "Yozgat Sorgun'da 16 yıllık tecrübeyle Yeminli Tercüme, Noter Onaylı Çeviri ve Profesyonel Vize Danışmanlık hizmetleri. Hemen uzman desteği alın.",
   keywords: "Yeminli Tercüme, Noter Onaylı Çeviri, Vize Danışmanlık, Yozgat, Sorgun, Aile Birleşimi",
+  alternates: {
+    canonical: '/',
+  },
+  openGraph: {
+    title: "Ortak Tercüme ve Vize Danışmanlık",
+    description: "Yozgat Sorgun'da 16 yıllık tecrübeyle Yeminli Tercüme, Noter Onaylı Çeviri ve Profesyonel Vize Danışmanlık hizmetleri.",
+    url: 'https://ortaktercumevize.vercel.app',
+    siteName: 'Ortak Tercüme',
+    images: [
+      {
+        url: '/logo.png',
+        width: 800,
+        height: 600,
+        alt: 'Ortak Tercüme Logo',
+      },
+    ],
+    locale: 'tr_TR',
+    type: 'website',
+  },
 };
 
 export default function RootLayout({
