@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
+import BackgroundVideo from "@/components/BackgroundVideo";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,8 +24,8 @@ export default function RootLayout({
     "@type": "LocalBusiness",
     name: "Ortak Tercüme ve Vize Danışmanlık",
     image: "/logo.png",
-    "@id": "https://ortaktercume.vercel.app",
-    url: "https://ortaktercume.vercel.app",
+    "@id": "https://ortaktercumevize.vercel.app",
+    url: "https://ortaktercumevize.vercel.app",
     telephone: ["+905435136713", "+905426961732"],
     address: {
       "@type": "PostalAddress",
@@ -60,8 +63,13 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className={`${inter.className} bg-brand-blue text-brand-text antialiased`}>
-        {children}
+      <body className={`${inter.className} text-zinc-100 antialiased min-h-screen flex flex-col relative`}>
+        <BackgroundVideo />
+        <Header />
+        <main className="flex-1 flex flex-col pt-16 sm:pt-20">
+          {children}
+        </main>
+        <Footer />
       </body>
     </html>
   );
