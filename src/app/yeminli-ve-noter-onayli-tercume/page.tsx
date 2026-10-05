@@ -32,7 +32,7 @@ export default function YeminliTercume() {
             Yeminli Tercüme ve Noter Onaylı Çeviri Hizmetleri
           </motion.h1>
           <motion.p variants={fadeInUp} className="text-base sm:text-lg text-zinc-400 leading-relaxed font-light">
-            Resmi makamlar, konsolosluklar ve uluslararası kurumlara ibraz edilecek evraklarınızın; gizlilik prensiplerine tam uyumlu, yeminli tercüman kaşeli ve noter tasdikli olarak uluslararası standartlarda çevrilmesini ve süreç takibini hassasiyetle gerçekleştiriyoruz.
+            İdari mercilere, yargı organlarına ve yabancı temsilciliklere ibraz edilecek resmi evrakların yeminli tercüman kaşeli çevirisi ve noter tasdik süreçleri mevzuata uygun şekilde tanzim edilmektedir. İşlemler resmi biçim şartlarına bağlı kalınarak yürütülür.
           </motion.p>
         </div>
 
@@ -44,16 +44,17 @@ export default function YeminliTercume() {
               <div className="p-2.5 bg-indigo-500/10 rounded-xl text-indigo-400 border border-indigo-500/20 group-hover:bg-indigo-500/20 transition-colors">
                 <BookOpen className="w-6 h-6" />
               </div>
-              <h2 className="text-xl font-semibold text-zinc-100">Tercüme Kapsamındaki Resmi Evraklar</h2>
+              <h2 className="text-xl font-semibold text-zinc-100">Başlıca Çeviri ve Metin Hizmeti Alanları</h2>
             </div>
             <ul className="space-y-3.5">
               {[
-                "Kimlik ve Pasaport Çevirileri",
-                "Diploma, Transkript ve Öğrenci Belgeleri",
-                "Nüfus Kayıt Örneği, İkametgah ve Sabıka Kaydı",
-                "Vekaletname ve Muvafakatname Çevirileri",
-                "Ticari Sicil Gazetesi, Vergi Levhası ve Şirket Evrakları",
-                "Banka Hesap Dökümleri ve Gelir Belgeleri"
+                "Nüfus, kimlik, pasaport, medeni durum ve aile cüzdanı belgeleri",
+                "Diploma, transkript, denklik ve eğitim evrakları",
+                "Adli sicil, ikametgah, mahkeme kararları ve hukuki metinler",
+                "Vekaletname, muvafakatname, taahhütname ve noterlik evrakları",
+                "Ticari sicil, bilanço, imza sirküleri ve kurumsal şirket evrakları",
+                "Resmi makamlara yönelik dilekçe tanzimi, beyanname ve başvuru formları",
+                "Yurt içi ve yurt dışı kurumlara ibraz edilecek diğer tüm resmi evraklar"
               ].map((item, i) => (
                 <li key={i} className="flex items-start gap-3 text-sm sm:text-base text-zinc-300">
                   <CheckCircle2 className="w-5 h-5 text-indigo-400 shrink-0 mt-0.5" />
