@@ -463,7 +463,7 @@ export default function Home() {
               </div>
             </Link>
             <p className="text-[13px] sm:text-sm text-zinc-400 max-w-md mx-auto lg:mx-0 leading-relaxed font-light">
-              16 yıllık sektörel tecrübemizle yurt dışı aile birleşimi, tercüme ve vize danışmanlık süreçlerinizde güvenilir, şeffaf ve profesyonel rehberlik sunuyoruz.
+              16 yıllık sektörel deneyim doğrultusunda; yurt dışı vize danışmanlığı, yeminli tercüme süreçlerinde resmi mevzuata uygun danışmanlık ve evrak yönetimi sağlanmaktadır.
             </p>
           </div>
           
