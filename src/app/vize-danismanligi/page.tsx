@@ -69,16 +69,15 @@ export default function VizeDanismanligi() {
               <div className="p-2.5 bg-emerald-500/10 rounded-xl text-emerald-400 border border-emerald-500/20 group-hover:bg-emerald-500/20 transition-colors">
                 <FileCheck2 className="w-6 h-6" />
               </div>
-              <h2 className="text-xl font-semibold text-zinc-100">Danışmanlık Dahilindeki Hizmetler</h2>
+              <h2 className="text-xl font-semibold text-zinc-100">Danışmanlık Kapsamı ve Dosya Yönetimi</h2>
             </div>
             <ul className="space-y-3.5">
               {[
-                "Konsolosluk ve aracı kurum randevu takibi (VFS, iDATA vb.)",
-                "Kişisel ve mesleki duruma özel evrak listesi tanzimi",
-                "Resmi başvuru formlarının uluslararası formatta doldurulması",
-                "Uçak ve Otel ön rezervasyon belgelerinin oluşturulması",
-                "Seyahat Sağlık Sigortası tanzimi (Gerekli poliçelerin kesilmesi)",
-                "Evrakların son kontrolü ve dosya tanzimi (Dosyanın mülakata hazır hale getirilmesi)"
+                "Yetkili kurum ve konsolosluk randevu takvimi yönetimi",
+                "Başvuru kategorisine özel resmi evrak ve dosya tanzimi",
+                "Uluslararası mevzuata uygun resmi başvuru formlarının tanzimi",
+                "Zorunlu seyahat belgeleri ve başvuru eklerinin hazırlanması",
+                "Konsolosluk kabul şartlarına uygun dosya denetimi ve süreç takibi"
               ].map((item, i) => (
                 <li key={i} className="flex items-start gap-3 text-sm sm:text-base text-zinc-300">
                   <CheckCircle2 className="w-5 h-5 text-emerald-400 shrink-0 mt-0.5" />
