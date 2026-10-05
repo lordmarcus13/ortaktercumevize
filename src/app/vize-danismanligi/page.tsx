@@ -32,7 +32,7 @@ export default function VizeDanismanligi() {
             Vize Danışmanlığı ve Başvuru Süreç Yönetimi
           </motion.h1>
           <motion.p variants={fadeInUp} className="text-base sm:text-lg text-zinc-400 leading-relaxed font-light">
-            Schengen bölgesi başta olmak üzere, uluslararası seyahatleriniz için gerekli vize başvurularınızda; en güncel konsolosluk prosedürlerine uygun eksiksiz dosya tanzimi ve resmi mülakat sürecine hazırlık aşamalarında profesyonel danışmanlık sağlıyoruz.
+            Uluslararası vize müracaatları kapsamında; yetkili konsolosluk yönergelerine uygun başvuru dosyası tanzimi, randevu takibi ve resmi evrak yapılandırma süreçleri icra edilmektedir.
           </motion.p>
         </div>
 
