@@ -181,12 +181,6 @@ export default function Home() {
                 variants={staggerContainer}
                 className="space-y-6 sm:space-y-8 text-center lg:text-left"
               >
-                <motion.div variants={fadeInUp} className="inline-block">
-                  <span className="px-3 py-1 sm:px-4 sm:py-1.5 text-[10px] sm:text-xs font-bold tracking-widest uppercase rounded-full bg-amber-500/10 text-amber-500 border border-amber-500/20 backdrop-blur-md">
-                    Güvenilir & Şeffaf Süreç Yönetimi
-                  </span>
-                </motion.div>
-
                 <motion.h1
                   variants={fadeInUp}
                   className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-white leading-[1.15]"
@@ -201,7 +195,7 @@ export default function Home() {
                   variants={fadeInUp}
                   className="text-base sm:text-lg md:text-xl text-zinc-300 max-w-lg mx-auto lg:mx-0 leading-relaxed font-light"
                 >
-                  16 yıllık sektörel tecrübemiz ve şeffaflık ilkemizle; yurt dışı aile birleşimi, tercüme ve vize danışmanlık süreçlerinizde profesyonel rehberlik sunuyoruz. Amacımız, karmaşık yasal prosedürleri sizin için anlaşılır hale getirmek.
+                  Ortak Tercüme ve Vize Danışmanlık bünyesinde yeminli tercüme ve noter tasdikli tercüme hizmetleri sunulmaktadır. Vize danışmanlığı kapsamında başvuru süreçlerine yönelik resmi evrak hazırlığı, başvuru dosyalarının oluşturulması ve süreç takibi sağlanmaktadır. Tüm işlemler, ilgili konsolosluklar ile resmi makamların güncel idari mevzuat ve prosedürlerine uygun olarak yürütülür.
                 </motion.p>
 
                 <motion.div variants={fadeInUp} className="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-2 sm:pt-4 w-full justify-center lg:justify-start">
