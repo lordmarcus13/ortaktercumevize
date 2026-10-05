@@ -23,7 +23,7 @@ export default function Footer() {
           </div>
           <div className="bg-white/[0.03] p-4 rounded-xl lg:bg-transparent lg:p-0 border border-white/5 lg:border-transparent">
             <strong className="text-zinc-200 block mb-1.5 sm:mb-2 font-medium tracking-wide">Bilgilendirme Beyanı:</strong>
-            <p>Bu web sitesi, süreçler hakkında bilgi verme amacıyla hazırlanmış olup bir reklam aracı değildir. Firmamız hiçbir başvuru için &quot;kesin vize alma&quot; garantisi sunmaz. Hizmetlerimiz; konsoloslukların talep ettiği işlemlerin eksiksiz yapılması, evrakların doğru hazırlanması ve sürecin profesyonelce takip edilmesini kapsar. Vize onay kararı tamamen ilgili ülkenin resmi makamlarına aittir.</p>
+            <p>Bu web sitesi, Ortak Tercüme ve Vize Danışmanlık tarafından verilen hizmetleri ve bu hizmetlerin usul esaslarını sunmak amacıyla hazırlanmıştır. Sunulan hizmet konsoloslukların talep ettiği işlemlerin eksiksiz yapılması, evrakların doğru hazırlanması ve sürecin profesyonelce takip edilmesini kapsar. İşletmemiz, yürütülen danışmanlık süreçlerinde başvuru neticesine dair herhangi bir onay taahhüdünde bulunmamaktadır. Vize başvurularında karar verme yetkisi yalnızca ilgili ülkenin büyükelçilik ve konsolosluklarına aittir.</p>
           </div>
         </div>
       </div>

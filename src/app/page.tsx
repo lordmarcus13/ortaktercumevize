@@ -151,112 +151,28 @@ export default function Home() {
               </p>
             </div>
 
-            {/* TRUST CALLOUT */}
-            <div className="bg-zinc-900/50 border border-white/10 p-6 sm:p-8 rounded-2xl sm:rounded-3xl max-w-4xl mx-auto backdrop-blur-xl shadow-2xl relative overflow-hidden group hover:border-amber-500/30 transition-all duration-500">
-              <div className="absolute inset-0 bg-gradient-to-br from-amber-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-              <div className="relative z-10">
-                <h4 className="text-lg sm:text-xl font-bold text-amber-500 mb-3 sm:mb-4 flex items-center gap-2 sm:gap-3">
-                  <div className="p-1.5 sm:p-2 bg-amber-500/10 rounded-lg border border-amber-500/20">
-                    <Info className="w-4 h-4 sm:w-5 sm:h-5 text-amber-500" />
-                  </div>
-                  %100 Manuel & Şeffaf Süreç Yönetimi
-                </h4>
-                <p className="text-zinc-300 leading-relaxed text-[13px] sm:text-sm md:text-base font-light">
-                  İşletme herhangi bot veya benzeri yazılım kullanmaz. İşlemler ve süreçler doğrudan tarafımızca yürütülür ve takip edilir. Her şeyin eksiksiz ve güncel verilere göre hazırlanmasını sağlarız. Gerçek dışı veya yanıltıcı sözler vermeyiz.
-                </p>
-              </div>
-            </div>
           </motion.div>
-
+          
+          {/* TRUST CALLOUT */}
           <motion.div
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, margin: "-50px" }}
-            variants={staggerContainer}
-            className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-10"
+            viewport={{ once: true }}
+            variants={fadeInUp} 
+            className="bg-zinc-900/50 border border-amber-500/30 p-6 sm:p-8 rounded-2xl sm:rounded-3xl max-w-4xl mx-auto backdrop-blur-xl shadow-2xl relative overflow-hidden mt-12 sm:mt-16 group"
           >
-            {/* SERVICE CARD 1 */}
-            <motion.article
-              variants={fadeInUp}
-              className="group relative p-6 sm:p-10 bg-white/[0.02] backdrop-blur-xl rounded-2xl sm:rounded-3xl border border-white/10 transition-all duration-500 hover:-translate-y-2 hover:bg-white/[0.04] hover:border-indigo-500/40 hover:shadow-[0_20px_40px_rgba(79,70,229,0.15)] overflow-hidden flex flex-col h-full"
-            >
-              <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-              
-              <div className="relative z-10 flex-1 flex flex-col">
-                <div className="flex items-center gap-4 sm:gap-5 mb-6 sm:mb-8">
-                  <div className="w-12 h-12 sm:w-16 sm:h-16 shrink-0 flex items-center justify-center rounded-xl sm:rounded-2xl bg-zinc-800/80 border border-white/10 text-indigo-400 group-hover:scale-110 transition-all duration-500 shadow-inner group-hover:bg-indigo-500/10 group-hover:border-indigo-500/30">
-                    <FileSignature className="w-6 h-6 sm:w-8 sm:h-8" />
-                  </div>
-                  <h3 className="text-xl sm:text-2xl font-bold text-zinc-100 group-hover:text-white transition-colors leading-tight tracking-wide">
-                    Yeminli Tercüme ve Noter Onaylı Tercüme
-                  </h3>
+            <div className="absolute inset-0 bg-gradient-to-br from-amber-500/5 to-transparent opacity-100" />
+            <div className="relative z-10">
+              <h4 className="text-lg sm:text-xl font-bold text-amber-500 mb-3 sm:mb-4 flex items-center gap-2 sm:gap-3">
+                <div className="p-1.5 sm:p-2 bg-amber-500/10 rounded-lg border border-amber-500/20">
+                  <Info className="w-4 h-4 sm:w-5 sm:h-5 text-amber-500" />
                 </div>
-                
-                <ul className="space-y-3 sm:space-y-4 mb-8 sm:mb-10 flex-1">
-                  {[
-                    "Yeminli tercüman kaşeli resmi belge çevirileri",
-                    "Noter Tasdikli Tercüme",
-                    "Nüfus Kayıt Örneği, diploma, adli tercümeler ve diğer evrak tercümeleri",
-                    "Almanca, İngilizce, Fransızca ve diğer dillerde apostil uyumlu çeviriler"
-                  ].map((item, i) => (
-                    <li key={i} className="flex items-start gap-3">
-                      <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 shrink-0 shadow-[0_0_8px_rgba(79,70,229,0.8)]" />
-                      <span className="text-sm sm:text-base text-zinc-300 font-light leading-relaxed">{item}</span>
-                    </li>
-                  ))}
-                </ul>
-
-                <Link 
-                  href="/yeminli-ve-noter-onayli-tercume"
-                  className="mt-auto group/btn inline-flex items-center text-sm sm:text-base font-medium text-indigo-400 hover:text-indigo-300 transition-colors"
-                >
-                  Tercüme Süreci ve Detaylar
-                  <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 ml-2 group-hover/btn:translate-x-1.5 transition-transform" />
-                </Link>
-              </div>
-            </motion.article>
-
-            {/* SERVICE CARD 2 */}
-            <motion.article
-              variants={fadeInUp}
-              className="group relative p-6 sm:p-10 bg-white/[0.02] backdrop-blur-xl rounded-2xl sm:rounded-3xl border border-white/10 transition-all duration-500 hover:-translate-y-2 hover:bg-white/[0.04] hover:border-emerald-500/40 hover:shadow-[0_20px_40px_rgba(16,185,129,0.15)] overflow-hidden flex flex-col h-full"
-            >
-              <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-              
-              <div className="relative z-10 flex-1 flex flex-col">
-                <div className="flex items-center gap-4 sm:gap-5 mb-6 sm:mb-8">
-                  <div className="w-12 h-12 sm:w-16 sm:h-16 shrink-0 flex items-center justify-center rounded-xl sm:rounded-2xl bg-zinc-800/80 border border-white/10 text-emerald-400 group-hover:scale-110 transition-all duration-500 shadow-inner group-hover:bg-emerald-500/10 group-hover:border-emerald-500/30">
-                    <Globe className="w-6 h-6 sm:w-8 sm:h-8" />
-                  </div>
-                  <h3 className="text-xl sm:text-2xl font-bold text-zinc-100 group-hover:text-white transition-colors leading-tight tracking-wide">
-                    Vize Danışmanlığı ve Başvuru Yönetimi
-                  </h3>
-                </div>
-                
-                <ul className="space-y-3 sm:space-y-4 mb-8 sm:mb-10 flex-1">
-                  {[
-                    "Konsolosluk ve resmi aracı kurum randevu süreci ve danışmanlığı",
-                    "Başvuru türüne göre (turistik, ticari, aile birleşimi) evrak listesi tanzimi",
-                    "Uçak ve otel ön rezervasyon dökümleri",
-                    "Dosya kontrolü ve mülakat/teslim aşamasına kadar süreç takibi"
-                  ].map((item, i) => (
-                    <li key={i} className="flex items-start gap-3">
-                      <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-emerald-500 shrink-0 shadow-[0_0_8px_rgba(16,185,129,0.8)]" />
-                      <span className="text-sm sm:text-base text-zinc-300 font-light leading-relaxed">{item}</span>
-                    </li>
-                  ))}
-                </ul>
-
-                <Link 
-                  href="/vize-danismanligi"
-                  className="mt-auto group/btn inline-flex items-center text-sm sm:text-base font-medium text-emerald-400 hover:text-emerald-300 transition-colors"
-                >
-                  Vize Başvuru Süreci ve Detaylar
-                  <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 ml-2 group-hover/btn:translate-x-1.5 transition-transform" />
-                </Link>
-              </div>
-            </motion.article>
-
+                Çalışma İlkeleri ve Süreç Güvenliği
+              </h4>
+              <p className="text-zinc-300 leading-relaxed text-sm sm:text-base font-light">
+                Ortak Tercüme ve Vize Danışmanlık bünyesindeki tüm dosya hazırlık ve randevu takvim işlemleri üçüncü taraf otomatik yazılımlar (botlar) yerine doğrudan uzman personelimiz tarafından takip edilir. Süreç boyunca spekülatif taahhütlerden uzak, yalnızca yetkili kurumların resmi tebliğ ve prosedürlerine dayalı şeffaf bir hizmet sunulur.
+              </p>
+            </div>
           </motion.div>
         </div>
       </section>
