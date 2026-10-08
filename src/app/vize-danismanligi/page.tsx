@@ -99,7 +99,7 @@ export default function VizeDanismanligi() {
               İşleyiş ve Prensipler
             </h4>
             <p className="text-zinc-300 leading-relaxed text-sm sm:text-base font-light">
-              Tüm vize süreçlerinde onay ya da ret yetkisi (nihai karar) tamamen ilgili ülkenin konsolosluklarına / büyükelçiliklerine aittir. Firmamız vize alıp alamayacağınıza hiçbir şekilde garanti etmez. Sunduğumuz hizmet, başvuru dosyanızın yetkili mercilerin talep ettiği prosedürlere uygun, eksiksiz ve yasal formatta hazırlanmasını; randevu sürecinin takibini ve bürokratik engellerin en aza indirilmesini kapsar.
+              Tüm vize süreçlerinde onay ya da ret yetkisi (nihai karar) tamamen ilgili ülkenin konsolosluklarına / büyükelçiliklerine aittir. Firmamız vize alıp alamayacağınızı hiçbir şekilde garanti etmez. Sunduğumuz hizmet, başvuru dosyanızın yetkili mercilerin talep ettiği prosedürlere uygun, eksiksiz ve yasal formatta hazırlanmasını; randevu sürecinin takibini ve bürokratik engellerin en aza indirilmesini kapsar.
             </p>
           </div>
         </motion.div>
